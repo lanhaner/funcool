@@ -23,9 +23,9 @@ git [--version] [--help] [-C <path>] [-c <name>=<value>]
    - rm            --    Remove files from the working tree and from the index
    - sparse-checkout --  Initialize and modify the sparse-checkout
 ```example
-	git add git.txt
-	git mv git.txt
-	git rm git.txt
+git add git.txt
+git mv git.txt
+git rm git.txt
  ```
 
 - examine the history and state (see also: git help revisions)
@@ -36,10 +36,10 @@ git [--version] [--help] [-C <path>] [-c <name>=<value>]
    - show      --     Show various types of objects
    - status     --     Show the working tree status
    ```example
-   git diff git.txt
-   git log
-   git show
-   git status
+git diff git.txt
+git log
+git show
+git status
    ```
 - grow, mark and tweak your common history
    - branch      --      List, create, or delete branches
