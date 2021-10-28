@@ -15,7 +15,9 @@ git [--version] [--help] [-C <path>] [-c <name>=<value>]
  git clone https://github.com/lanhaner/funcool.git
  ```
    - init       --       Create an empty Git repository or reinitialize an existing one
-
+ ```example
+ git init
+ ```
 - work on the current change (see also: git help everyday)
    - add         --      Add file contents to the index
  ```example
@@ -93,8 +95,6 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 git add git.txt
-```
-```
 git status
 ```
 On branch main
@@ -179,7 +179,7 @@ index 57c437d..f44f6a5 100644
 
 +clone          Clone a repository into a new directory
 
-quit by letter 'q'
+*quit by letter 'q'*
 
 ```
 git add git.txt
