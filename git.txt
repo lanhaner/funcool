@@ -58,7 +58,7 @@ concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
 
-##add files
+----------------add new file-------------------
 git status
 #On branch main
 #Your branch is up to date with 'origin/main'.
@@ -96,5 +96,65 @@ git push -u origin main
 #   91bc1a1..5efed32  main -> main
 #Branch 'main' set up to track remote branch 'main' from 'origin'.
 
+
+----------------modify file-------------------
+git status
+#On branch main
+#Your branch is up to date with 'origin/main'.
+#
+#Changes not staged for commit:
+#  (use "git add <file>..." to update what will be committed)
+#  (use "git restore <file>..." to discard changes in working directory)
+#        modified:   git.txt
+#
+#no changes added to commit (use "git add" and/or "git commit -a")
+git diff git.txt
+diff --git a/git.txt b/git.txt
+index 57c437d..f44f6a5 100644
+--- a/git.txt
++++ b/git.txt
+@@ -9,23 +9,31 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+ These are common Git commands used in various situations:
+
+ start a working area (see also: git help tutorial)
+-   clone             Clone a repository into a new directory
++   clone          Clone a repository into a new directory
++// example
++// git clone https://github.com/lanhaner/funcool.git
+    init              Create an empty Git repository or reinitialize an existing one
+
+ work on the current change (see also: git help everyday)
+    add               Add file contents to the index
++// example
++// git add git.txt
+    mv                Move or rename a file, a directory, or a symlink
+-   restore           Restore working tree files
++// example
++// git mv git.txt
++   restore         Restore working tree files
+    rm                Remove files from the working tree and from the index
++// example
++// git rm git.txt
+    sparse-checkout   Initialize and modify the sparse-checkout
+
+ examine the history and state (see also: git help revisions)
+-   bisect            Use binary search to find the commit that introduced a bug
++   bisect          Use binary search to find the commit that introduced a bug
+    diff              Show changes between commits, commit and working tree, etc
+-   grep              Print lines matching a pattern
+-   log               Show commit logs
+-   show              Show various types of objects
+-   status            Show the working tree status
++   grep            Print lines matching a pattern
++   log              Show commit logs
++   show           Show various types of objects
++   status          Show the working tree status
+
+
+//quit by letter 'q'
+
+git add git.txt
+git commit -m "git CLI"
+git push -u origin main
 
 ##delete files
