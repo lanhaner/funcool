@@ -11,49 +11,36 @@ git [--version] [--help] [-C <path>] [-c <name>=<value>]
 
 - start a working area (see also: git help tutorial)
    - clone     --     Clone a repository into a new directory
- ```example
+   - init       --       Create an empty Git repository or reinitialize an existing one 
+```example
  git clone https://github.com/lanhaner/funcool.git
- ```
-   - init       --       Create an empty Git repository or reinitialize an existing one
- ```example
  git init
  ```
 - work on the current change (see also: git help everyday)
    - add         --      Add file contents to the index
- ```example
-   git add git.txt
-   ```
-   - mv           --     Move or rename a file, a directory, or a symlink
-  ```example
-  git mv git.txt
-  ```
+   - mv           --     Move or rename a file, a directory, or a symlink 
    - restore      --   Restore working tree files
    - rm            --    Remove files from the working tree and from the index
-   ```example
- git rm git.txt
- ```
    - sparse-checkout --  Initialize and modify the sparse-checkout
+```example
+	git add git.txt
+	git mv git.txt
+	git rm git.txt
+ ```
 
-- examine -- the history and state (see also: git help revisions)
+- examine the history and state (see also: git help revisions)
    - bisect      --    Use binary search to find the commit that introduced a bug
    - diff        --      Show changes between commits, commit and working tree, etc
-   ```example
-   git diff git.txt
-   ```
    - grep      --      Print lines matching a pattern
    - log       --       Show commit logs
-   ```exapmle 
-   git log
-   ```
    - show      --     Show various types of objects
-```example
-   git show
-   ```
    - status     --     Show the working tree status
-   ```exapmle 
+   ```example
+   git diff git.txt
+   git log
+   git show
    git status
    ```
-
 - grow, mark and tweak your common history
    - branch      --      List, create, or delete branches
    - commit     --       Record changes to the repository
