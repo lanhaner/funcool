@@ -34,8 +34,14 @@ examine the history and state (see also: git help revisions)
 // git diff git.txt
    grep            Print lines matching a pattern
    log              Show commit logs
+// exapmle 
+// git log
    show           Show various types of objects
+// example
+// git show
    status          Show the working tree status
+// exapmle 
+// git status
 
 grow, mark and tweak your common history
    branch            List, create, or delete branches
@@ -151,10 +157,13 @@ index 57c437d..f44f6a5 100644
 +   status          Show the working tree status
 
 
-//quit by letter 'q'
+// quit by letter 'q'
 
 git add git.txt
 git commit -m "git CLI"
 git push -u origin main
 
 ##delete files
+git rm test.txt
+git commit -m "remove test.txt"
+git push -u origin main
