@@ -35,12 +35,12 @@ git rm git.txt
    - log       --       Show commit logs
    - show      --     Show various types of objects
    - status     --     Show the working tree status
-   ```example
+```example
 git diff git.txt
 git log
 git show
 git status
-   ```
+```
 - grow, mark and tweak your common history
    - branch      --      List, create, or delete branches
    - commit     --       Record changes to the repository
