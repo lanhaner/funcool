@@ -8,3 +8,5 @@
 ## npm
 ## vue
 ## luarocks
+## [lua](https://github.com/lanhaner/funcool/blob/main/lua.md)
+## [jsFunction](https://github.com/lanhaner/funcool/blob/main/jsfunction.md)
