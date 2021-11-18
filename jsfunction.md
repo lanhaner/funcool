@@ -70,3 +70,80 @@ let isEmailAddress = val => {
 console.log(isEmailAddress('Acs')) //false
 console.log(isEmailAddress('133@qq.com')) //true
 ```
+
+# 返回数组中的最大值
+```
+let arrayMax = arr => Math.max(...arr)
+let arr = [1,2,3,5]
+console.log(arrayMax(arr)) //5
+```
+
+# 返回数组中的最小值
+```
+let arrayMin = arr => Math.min(...arr)
+let arr = [1,2,3,5]
+console.log(arrayMin(arr)) //1
+```
+
+# 将数组块划分为指定大小的较小数组
+```
+let chunk = (arr, size) => Array.from({
+	length: Math.ceil(arr.length / size)
+}, (v, i) => arr.slice(i * size, i * size + size))
+let arr = [1, 2, 3, 5]
+console.log(chunk(arr,2)) //0: Array [ 1, 2 ],1: Array [ 3, 5 ]
+```
+
+# 从数组中移除 false 值
+```
+let compact = arr => arr.filter(Boolean)
+let arr = [false,null,0,"",undefined,NaN,1]
+console.log(compact(arr)) //[ 1 ]
+```
+
+# 计算数组中值的出现次数
+```
+let countOccurrences = (arr, value) => arr.reduce((a, v) => v === value ? a + 1 : a + 0, 0)
+let arr = [1,2,1,2,3,3,3,3]
+console.log(countOccurrences(arr,3))//4
+```
+
+# 深拼合数组
+```
+let deepFlatten= arr => [].concat(...arr.map(v => Array.isArray(v) ? deepFlatten(v) : v))
+let arr = [1, 2, [1, 2, [1, 2, [2, 3]]]]
+console.log(deepFlatten(arr)) // [ 1, 2, 1, 2, 1, 2, 2, 3 ]
+```
+
+# 返回两个数组之间的差异
+```
+let difference = (a, b) => {
+	const s = new Set(b)
+	return a.filter(x => !s.has(x))
+};
+let arr = [1,2,3]
+let arr2 = [2,3,4]
+console.log(difference(arr,arr2))//[1]
+console.log(difference(arr2,arr))//[4]
+```
+
+# 返回数组的所有不同值
+```
+let distinctValuesOfArray = arr => [...new Set(arr)]
+let arr = [1, 2, 3, 1, 2]
+console.log(distinctValuesOfArray(arr)) // [ 1, 2, 3 ]
+```
+# 返回数组中的每个第n个元素
+```
+let everyNth = (arr, nth) => arr.filter((e, i) => i % nth === 0)
+```
+
+# 筛选出数组中的非唯一值
+```
+let filterNonUnique = arr => arr.filter(i => arr.indexOf(i) !== arr.lastIndexOf(i))
+```
+
+# 拼合数组
+```
+let flatten = arr => arr.reduce((a, v) => a.concat(v), [])
+```
