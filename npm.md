@@ -9,9 +9,8 @@ npm help &lt;term&gt;   search for help on &lt;term&gt;
 
 npm help npm      involved overview
 
-`
-
 where &lt;command&gt; is one of:
+
     access, adduser, audit, bin, bugs, c, cache, ci, cit,
     clean-install, clean-install-test, completion, config,
     create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
@@ -23,7 +22,6 @@ where &lt;command&gt; is one of:
     stars, start, stop, t, team, test, token, tst, un,
     uninstall, unpublish, unstar, up, update, v, version, view,
     whoami
-`
 
 # access
 
@@ -67,9 +65,13 @@ where &lt;command&gt; is one of:
 # hook
 
 # init
+
 npm init [--force|-f|--yes|-y|--scope]
+
 npm init <@scope> (same as `npx <@scope>/create`)
+
 npm init [<@scope>/]<name> (same as `npx [<@scope>/]create-<name>`)
+
 
 # install
 
