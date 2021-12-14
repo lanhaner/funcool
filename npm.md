@@ -1,10 +1,16 @@
 # Usage
 npm <command>
+
 npm <command> -h  quick help on <command>
+
 npm -l            display full usage info
+
 npm help <term>   search for help on <term>
+
 npm help npm      involved overview
+
 `
+
 where <command> is one of:
     access, adduser, audit, bin, bugs, c, cache, ci, cit,
     clean-install, clean-install-test, completion, config,
