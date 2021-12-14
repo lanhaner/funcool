@@ -1,17 +1,17 @@
 # Usage
-npm <command>
+npm &lt;command&gt;
 
-npm <command> -h  quick help on <command>
+npm &lt;command&gt; -h  quick help on &lt;command&gt;
 
 npm -l            display full usage info
 
-npm help <term>   search for help on <term>
+npm help &lt;term&gt;   search for help on &lt;term&gt;
 
 npm help npm      involved overview
 
 `
 
-where <command> is one of:
+where &lt;command&gt; is one of:
     access, adduser, audit, bin, bugs, c, cache, ci, cit,
     clean-install, clean-install-test, completion, config,
     create, ddp, dedupe, deprecate, dist-tag, docs, doctor,

@@ -5,7 +5,7 @@
 ## [git](https://github.com/lanhaner/funcool/blob/main/git.md)
 ## svn
 ## nodejs
-## npm
+## [npm](https://github.com/lanhaner/funcool/blob/main/npm.md)
 ## vue
 ## luarocks
 ## [lua](https://github.com/lanhaner/funcool/blob/main/lua.md)
